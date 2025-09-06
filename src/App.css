@@ -1,2 +1,185 @@
-main {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fafafa;
+  color: #262626;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login-container {
+  max-width: 350px;
+  width: 100%;
+}
+
+.login-box {
+  background: white;
+  border: 1px solid #dbdbdb;
+  padding: 40px 40px 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.logo h1 {
+  font-family: 'Billabong', cursive;
+  font-size: 51px;
+  font-weight: normal;
+  margin: 22px auto 12px;
+  color: #262626;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.login-form {
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 9px 0 7px 8px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background: #fafafa;
+  font-size: 12px;
+  margin-bottom: 6px;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #a8a8a8;
+  background: white;
+}
+
+.login-button {
+  width: 100%;
+  background: #0095f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 9px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  height: 30px;
+}
+
+.login-button:hover {
+  background: #1877f2;
+}
+
+.divider {
+  margin: 10px 0 18px;
+  position: relative;
+  color: #8e8e8e;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #dbdbdb;
+}
+
+.divider span {
+  background: white;
+  padding: 0 18px;
+  position: relative;
+}
+
+.facebook-button {
+  background: none;
+  border: none;
+  color: #385185;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.facebook-button:hover {
+  color: #1877f2;
+}
+
+.forgot-link {
+  color: #00376b;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.forgot-link:hover {
+  color: #1877f2;
+}
+
+.signup-box {
+  background: white;
+  border: 1px solid #dbdbdb;
+  padding: 25px 40px;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.signup-link {
+  color: #0095f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  color: #1877f2;
+}
+
+.app-download {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.app-download p {
+  color: #262626;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.download-buttons img {
+  height: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .login-box {
+    border: none;
+    padding: 20px;
+    background: transparent;
+  }
+  
+  .signup-box {
+    border: none;
+    background: transparent;
+  }
 }
